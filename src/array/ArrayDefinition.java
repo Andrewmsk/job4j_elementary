@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 public class ArrayDefinition {
 
     public static void main(String[] args) {
@@ -9,5 +11,11 @@ public class ArrayDefinition {
         System.out.println("Размер массива ages равен: " + ages.length);
         System.out.println("Размер массива surnames равен: " + surnames.length);
         System.out.println("Размер массива prices равен: " + prices.length);
+        String[] names = new String[4];
+        names[0] = "Brad";
+        names[1] = "John";
+        names[2] = "Paul";
+        names[3] = "Steve";
+        Arrays.stream(names).iterator().forEachRemaining(System.out::println);
     }
 }
