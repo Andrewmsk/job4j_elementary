@@ -9,7 +9,7 @@ public class Mortgage {
             year++;
             amount = amount - salary;
             if (year > 100) {
-                break;      // sout "you are died"; exit 1;
+                break;
             }
         }
         return year;

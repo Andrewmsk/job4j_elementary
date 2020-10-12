@@ -11,7 +11,6 @@ public class ReverseLoopForArray {
                                 + numbers[numbers.length - 1 - i]
                 );
             }
-
         }
     }
 }
