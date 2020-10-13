@@ -48,4 +48,10 @@ public class MaxTest {
         int result = Max.max(200, 1, 40, 5);
         assertThat(result, is(200));
     }
+
+    @Test
+    public void whenMax2From6Then2() {
+        int result = Max.max(200, 1000, 40, 5, 5, 7);
+        assertThat(result, is(1000));
+    }
 }
