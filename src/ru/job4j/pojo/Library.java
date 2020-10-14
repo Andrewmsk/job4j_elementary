@@ -19,10 +19,5 @@ public class Library {
         books[3] = tempBook;
         Arrays.stream(books).forEach(System.out::println);
         Arrays.stream(books).filter(a -> a.getName().equals("Clean code")).forEach(System.out::println);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
     }
 }
