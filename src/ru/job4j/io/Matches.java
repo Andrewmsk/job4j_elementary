@@ -1,19 +1,20 @@
 package ru.job4j.io;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Matches {
 
     public static void main(String[] args) {
         int matches = 11;
-        int matchesPlayer = 0;
+        int matchesPlayer;
+        boolean player = true;
         System.out.println("Спичек - " + matches);
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
             while (true) {
-                System.out.println("Введите кол-во спичек (от 1 до 3):");
+                int numberPlayer = player ? 1 : 2;
+                System.out.println(String.format("Игрок %s Введите кол-во спичек (от 1 до 3):", numberPlayer));
                 matchesPlayer = scanner.nextInt();
                 if (matchesPlayer > 0 && matchesPlayer < 4) {
                     matches -= matchesPlayer;
@@ -26,6 +27,7 @@ public class Matches {
                 break;
             }
             System.out.println("Осталось спичек " + matches);
+            player = !player;
         }
     }
 }
